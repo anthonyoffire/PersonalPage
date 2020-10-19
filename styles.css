@@ -88,15 +88,33 @@ div li{
 .intro p{
     margin-top: 2px;
 }
+#portfolio h3{
+    position: relative;
+    left: 70px;
+    bottom: 60px; 
+    margin-bottom: 0;
+}
+#portfolio li{
+    padding: 0;
+}
+.github{
+    position: relative;
+    bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
 .content{
     display: none;
     list-style-type: none;
 }
+.content h3{
+    margin-top: 30px;
+}
+#portfolio h3:hover{
+    color: white;
+}
 nav li a:hover{
     color:white;
-    cursor: pointer;
-}
-github{
     cursor: pointer;
 }
 @media screen and (max-width: 1000px){
