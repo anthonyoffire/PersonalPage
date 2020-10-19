@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="styles.css">
+        <title>Home Page - Anthony Baird</title>
+    </head>
+    <body>
+        <!-- <img src="Background.png" alt="Background" class = "background"> -->
+        <div class="bg"></div>
+        <nav>
+            <img src="skwisgar.jpg" alt="me">
+            <ul>
+                <li><a onclick="showContent('about')">About</a></li>
+                <li><a onclick="showContent('experience')">Experience</a></li>
+                <li><a onclick="showContent('education')">Education</a></li>
+                <li><a onclick="showContent('skills')">Skills</a></li>
+                <li><a onclick="showContent('portfolio')">Portfolio</a></li>
+                <li><a onclick="showContent('interests')">Interests</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="intro">
+                <h1>Anthony Baird</h1>
+                <p>anthonybaird@protonmail.com</p>
+            </div>
+            <div id="about" class="content">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae unde laborum, facere culpa praesentium vero deleniti vel, id officia nobis eum! Rem tempora suscipit illum officia ducimus impedit beatae.</p>
+            </div>
+            <div id="experience" class="content">
+                <h2>Experience</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae unde laborum, facere culpa praesentium vero deleniti vel, id officia nobis eum! Rem tempora suscipit illum officia ducimus impedit beatae.</p>
+            </div>
+            <div id="education" class="content">
+                <h2>Education</h2>
+                <li><strong>Bachelor of Science in Computer Science</strong> (December 2023)
+                    <br>Boise State University, Boise, ID
+                </li>
+                <li>
+                    <strong>Blockchain Development Certification</strong> (2021)
+                    <br>Dapp University
+                </li>
+            </div>
+            <div id="skills" class="content">
+                <h2>Skills</h2>
+                <ul> Languages used:
+                    <li>Java, C</li>
+                </ul>
+                <ul>Languages in progress:
+                    <li>Javascript, Solidity</li>
+                </ul>
+            </div>
+            <div id="portfolio" class="content">
+                <h2>Portfolio</h2>
+                <h3>Github</h3>
+                <li><a href="https://github.com/anthonyoffire?tab=repositories"><img src="github.png" alt="github" class="github"></a></li>
+            </div>
+            <div id="interests" class="content">
+                <h2>Interests</h2>
+                <h3>Blockchain</h3>
+                <ul>
+                    <li>Learning about blockchain since 2017</li>
+                    <li>Particular use case interests include payments, finance, and currency</li>
+                </ul>
+            </div>
+        </main>
+        <script>
+            function showContent(id){
+                var x = document.getElementById(id);
+                var list = ["about","experience","education","skills","portfolio","interests"];
+                for(i=0; i< list.length; i++){
+                    var y = document.getElementById(list[i]);
+                    if(x != y)
+                        y.style.display = "none";
+                }
+                x.style.display = "block";
+            }
+        </script>
+    </body>
+</html>

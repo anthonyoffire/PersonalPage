@@ -1,0 +1,106 @@
+.bg{
+    width: 85%;
+    height: 100vh;
+    position: fixed;
+    right:0;
+    top: 0;
+    z-index: -1;
+    background: rgb(31,40,51);
+    background: -moz-linear-gradient(242deg, rgba(31,40,51,1) 10%, rgba(11,12,16,1) 100%);
+    background: -webkit-linear-gradient(242deg, rgba(31,40,51,1) 10%, rgba(11,12,16,1) 100%);
+    background: linear-gradient(242deg, rgba(31,40,51,1) 10%, rgba(11,12,16,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f2833",endColorstr="#0b0c10",GradientType=1);
+}
+body{ 
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    color: #c5c6c7;
+    box-sizing: border-box;
+    
+}
+nav{
+    background-color: #0b0c10;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 150px;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+nav li{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: inherit;
+}
+li a{
+    color: #c5c6c7;
+    text-decoration: none;
+}
+nav img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 75px;
+    width: 125px;
+    box-sizing: border-box;
+}
+img{
+    -webkit-user-drag: none;
+}
+main div{
+    margin-left: 20%;
+    margin-top:auto;
+    margin-bottom:auto;
+    
+}
+div h2{
+    margin-bottom: 20px;
+}
+div li{
+    padding: 10px 0px;
+}
+.intro{
+    margin-top: 175px;
+    margin-bottom: 110px;
+    
+}
+.intro h1{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.intro p{
+    margin-top: 2px;
+}
+.content{
+    display: none;
+    list-style-type: none;
+}
+nav li a:hover{
+    color:white;
+    cursor: pointer;
+}
+github{
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+    main div{
+        margin-left: 175px;
+    }
+}
